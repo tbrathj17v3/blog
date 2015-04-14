@@ -22,8 +22,8 @@
     <div class="blog-masthead">
       <div class="container">
         <nav class="blog-nav">
-		    <a class="blog-nav-item active" href="index.html">Home</a>
-		    <a class="blog-nav-item" href="admin.html">Admin</a>
+		    <a class="blog-nav-item" href="index.html">Home</a>
+		    <a class="blog-nav-item active" href="admin.html">Admin</a>
 		</nav>
       </div>
     </div>
@@ -39,18 +39,19 @@
 
         <div class="col-sm-8 blog-main">
 
-          <div class="main-container">
-			<script id="blogs-tpl" type="text/x-handlebars-template">
-			    {{#each blog}}
-			    <div class="blog-post">
-			        <h2 class="blog-post-title"><a href="#">{{title}}</a></h2>
-			        <p class="blog-post-meta">At time by an author</p>
-			        <div>{{{content}}}</div>
-			    </div>
-			    {{/each}}
-			</script>
-          </div>
-
+    		  <div class="main-container">
+                  <form class="form-signin" role="form">
+                      <h2 class="form-signin-heading">Please sign in</h2>
+                      <input type="email" class="form-control" placeholder="Email address" required="" autofocus="">
+                      <input type="password" class="form-control" placeholder="Password" required="">
+                      <div class="checkbox">
+                          <label>
+                              <input type="checkbox" value="remember-me"> Remember me
+                          </label>
+                      </div>
+                      <button class="btn btn-lg btn-primary btn-block" type="submit">Sign in</button>
+                  </form>
+            </div>
         </div><!-- /.blog-main -->
 
         <div class="col-sm-3 col-sm-offset-1 blog-sidebar">
@@ -83,6 +84,7 @@
               <li><a href="#">Facebook</a></li>
             </ol>
           </div>
+       
         </div><!-- /.blog-sidebar -->
 
       </div><!-- /.row -->
@@ -104,7 +106,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <!-- Latest compiled and minified JavaScript -->
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-<script src="js/blog.js"></script>
 <script src="js/admin.js"></script>
   </body>
 </html>
